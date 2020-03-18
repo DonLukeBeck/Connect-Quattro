@@ -1,0 +1,75 @@
+:fullscreen {
+    color: blue;
+}
+
+body {
+    background-color: green;
+    overflow-y: hidden;
+}
+
+@keyframes appear {
+    from { opacity: 0; color: green; };
+    to { opacity: 1; color: black; };
+}
+
+h1 i::after {
+    content: " Quattro";
+}
+
+h1 i {
+    animation: appear 5s infinite;
+    animation-direction: alternate;
+}
+
+aside p::before {
+    content: "Player ";
+}
+
+.entireSpace {
+    width: auto;
+}
+
+.gameBody{
+    width:1400px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+button {
+    position: relative;
+    top: 100px;
+}
+
+#board, #left, #right {
+    display: inline-block;
+}
+
+#board {
+    border: 1px solid red;
+    text-align: center;
+    background-color: yellow;
+    margin-right: auto;
+    margin-left: auto;
+    width: 550px;
+}
+
+.playerspace{
+    font-size: 60px;
+    width: 400px; 
+    height: 450px;
+    float: left;
+    text-align: center;
+}
+
+#center{
+    width: 600px; 
+    height: 450px; 
+    float: left;
+}
+
+.coin {
+    margin: 5px;
+    padding: 1px;
+    display: inline-block;
+}
+

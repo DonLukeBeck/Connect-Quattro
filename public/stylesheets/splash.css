@@ -1,0 +1,68 @@
+body {
+    background-repeat: repeat;
+    background-image: url("../images/pizetti.png");
+    background-size: 4%;
+}
+
+@keyframes title {
+    from { background-color: green; };
+    to { background-color: white; };
+}
+
+#title{
+    background-color: white;
+    margin-left:auto;
+    margin-right: auto;
+    width: 500px; 
+    font-size: 60px;
+    margin-bottom: 150px;
+    animation: title 3s infinite;
+    animation-direction: alternate;
+    padding: 10px;
+    border: 2px solid red;
+}
+
+#play_game {
+    background-color: white;
+    width: 100px; 
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 150px;
+}
+
+#howtoplay::before {
+    content: "Choose ";
+}
+
+#howtoplay::after {
+    content: " win.";
+}
+
+#left {
+    width: 625px; 
+    height: 170px; 
+    float: left; 
+    font-size: 30px;
+}
+
+#left_text {
+    background-color: white; 
+    height: 170px; 
+    width: 300px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#left_text span {
+    position: relative;
+    left: 5px;
+}
+
+#right {
+    background-color: white; 
+    width: 625px; 
+    height: 170px; 
+    float: left;
+    font-size: 30px;
+}
+
